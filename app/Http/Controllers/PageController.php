@@ -98,7 +98,6 @@ class PageController extends Controller
 
         $bill = new Bill;
         $bill->id = $customer->id;
-        $bill->date_order = date('y-m-d');
         $bill->total = $cart->totalPrice;
         $bill->payment = $req->payment_method;
         $bill->note = $req->note;
