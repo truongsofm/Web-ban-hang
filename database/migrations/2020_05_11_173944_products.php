@@ -38,7 +38,7 @@ class Products extends Migration
             $table->date('date_order');
             $table->float('total');
             $table->char('payment',255);
-            $table->char('note',255);
+            $table->char('note',255)->nullable();
             $table->timestamps();
         });
         Schema::create('bill_detail', function (Blueprint $table) {
@@ -57,7 +57,7 @@ class Products extends Migration
             $table->char('email',50);
             $table->char('address',50);
             $table->char('phone_number',50);
-            $table->char('note',200);
+            $table->char('note',200)->nullable();
             $table->double('unit_price');
             $table->float('total');
             $table->timestamps();
