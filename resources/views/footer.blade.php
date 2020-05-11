@@ -16,7 +16,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-sm-3">
+				<div class="col-sm-3" style="margin-top: 0px; ">
 					<div class="widget">
 						<h4 class="widget-title">Liên hệ</h4>
 						<div>
@@ -32,7 +32,7 @@
 						<h4 class="widget-title">Fanpage</h4>
 						<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fhientailaphe%2F&tabs=timeline&width=300&height=300&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=519229205468273" width="300" height="200" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
 				</div>
-				<div class="col-sm-3">
+				<div class="col-sm-3" style="margin-top: 0px; ">
 					<div class="widget">
 						<h4 class="widget-title">Đăng ký tin mới</h4>
 						<form action="#" method="post">
