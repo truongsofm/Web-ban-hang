@@ -86,7 +86,7 @@
 									<div class="single-item">
 										<div class="ribbon-wrapper"><div class="ribbon sale">Sale</div></div>
 										<div class="single-item-header">
-											<a href="product.html"><img src="source/image/product/{{$salep->image}}" height ="270px" alt=""></a>
+											<a href="{{route('ProductDetail',$params = ['type' => $newp->id_type,'name' => $newp->name])}}"><img src="source/image/product/{{$salep->image}}" height ="270px" alt=""></a>
 										</div>
 										<div class="single-item-body" style="padding-bottom: 5px;">
 											<p class="single-item-title">{{$salep->name}}</p>
