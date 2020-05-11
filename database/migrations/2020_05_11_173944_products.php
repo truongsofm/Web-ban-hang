@@ -13,7 +13,6 @@ class Products extends Migration
      */
     public function up()
     {
-        SET datestyle = dmy;
         Schema::create('products', function (Blueprint $table) {
             $table->id();
             $table->char('name',255);
