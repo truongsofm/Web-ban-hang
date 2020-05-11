@@ -13,6 +13,7 @@ class Products extends Migration
      */
     public function up()
     {
+        SET datestyle = dmy;
         Schema::create('products', function (Blueprint $table) {
             $table->id();
             $table->char('name',255);
@@ -35,7 +36,6 @@ class Products extends Migration
         Schema::create('bills', function (Blueprint $table) {
             $table->id();
             $table->integer('id_customer')->nullable();
-            $table->date('date_order');
             $table->float('total');
             $table->char('payment',255);
             $table->char('note',255)->nullable();
