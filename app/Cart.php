@@ -28,7 +28,7 @@ class Cart
 			$giohang['price'] = $item->unit_price * $giohang['qty'];
 			$this->items[$id] = $giohang;
 			$this->totalQty+=$qtys;;
-			$this->totalPrice += $item->unit_price;
+			$this->totalPrice += $giohang['price'];
 		}
 		else{
 			$giohang = ['qty'=>0, 'price' => $item->unit_promotion_price, 'item' => $item];
@@ -41,7 +41,7 @@ class Cart
 			$giohang['price'] = $item->promotion_price * $giohang['qty'];
 			$this->items[$id] = $giohang;
 			$this->totalQty+=$qtys;;
-			$this->totalPrice += $item->promotion_price;
+			$this->totalPrice += $giohang['price'] ;
 		}
 	}
 	//xóa 1
