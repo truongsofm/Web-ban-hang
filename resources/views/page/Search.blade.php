@@ -31,7 +31,7 @@
 				<div class="row">
 					<div class="col-sm-12">
 						<div class="beta-products-list">
-							<h4>Tìm thấy {{count($product)}} sản phẩm " {{$name}} ":</h4>
+							<h4>Tìm thấy {{count($product)}} sản phẩm " {{$namep}} ":</h4>
 							<div class="beta-products-details">
 								<div class="clearfix"></div>
 							</div>
