@@ -191,7 +191,7 @@ class PageController extends Controller
     public function getSearch(Request $req){
         $namep = $req->key;
         $slide = Slide::all();
-        $product = Product::WHERE('name','like','%'.$req->key.'%')->ORWHERE('unit_price',$req->key)->paginate(16);
+        $product = Product::WHERE('name','like',''%'.$req->key.'%'')->ORWHERE('unit_price',$req->key)->paginate(16);
         return view('page.Search',compact('slide','product','namep'));
     }
     public function check(Request $request)
