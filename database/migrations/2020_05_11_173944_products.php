@@ -34,7 +34,7 @@ class Products extends Migration
         });
         Schema::create('bills', function (Blueprint $table) {
             $table->id();
-            $table->integer('id_customer');
+            $table->integer('id_customer')->nullable();
             $table->date('date_order');
             $table->float('total');
             $table->char('payment',255);
@@ -47,7 +47,6 @@ class Products extends Migration
             $table->integer('id_product');
             $table->integer('quantity');
             $table->double('unit_price');
-            $table->float('total');
             $table->timestamps();
         });
         Schema::create('customer', function (Blueprint $table) {
@@ -58,8 +57,6 @@ class Products extends Migration
             $table->char('address',50);
             $table->char('phone_number',50);
             $table->char('note',200)->nullable();
-            $table->double('unit_price');
-            $table->float('total');
             $table->timestamps();
         });
         Schema::create('slide', function (Blueprint $table) {
