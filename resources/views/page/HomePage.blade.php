@@ -1,4 +1,4 @@
-@extends('master')
+@@extends('master')
 @section('content')
 <div class="rev-slider">
 <div class="fullwidthbanner-container">
@@ -86,7 +86,7 @@
 									<div class="single-item">
 										<div class="ribbon-wrapper"><div class="ribbon sale">Sale</div></div>
 										<div class="single-item-header">
-											<a href="{{route('ProductDetail',$params = ['type' => $newp->id_type,'name' => $newp->name])}}"><img src="source/image/product/{{$salep->image}}" height ="270px" alt=""></a>
+											<a href="{{route('ProductDetail',$params = ['type' => $salep->id_type,'name' => $salep->name])}}"><img src="source/image/product/{{$salep->image}}" height ="270px" alt=""></a>
 										</div>
 										<div class="single-item-body" style="padding-bottom: 5px;">
 											<p class="single-item-title">{{$salep->name}}</p>
