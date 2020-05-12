@@ -129,7 +129,7 @@
 	<script src="source/assets/dest/js/wow.min.js"></script>
 	<!--customjs-->
 	<script src="source/assets/dest/js/custom2.js"></script>
-	@if (session('thong bao'))
+	@if(Session::has('thong bao'))
 	<script type="text/javascript">
 		var x = document.getElementById("body1");
 		var y = document.getElementById("popup_noti");
