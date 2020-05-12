@@ -15,12 +15,11 @@
 		}
 		#popup_noti{
 			opacity: 0;
-			border: 0.4px solid grey;
 			position: absolute;
 			z-index: -99;
 			left: 37.5vw;
 			border-radius: 30px;
-			box-shadow: 10px 10px 5px grey;
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 			display: inline-block;
 			text-align: center;
 			background-color: white;
